@@ -18,7 +18,8 @@ const NewPredictionLayout = () => {
         </div>
       </div>
       {/* Recommendation Container */}
-      <RecommendationSection />
+      <RecommendationSection/>
+     
     </div>
   );
 };

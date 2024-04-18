@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./layout.css";
+import "./css/tabs.css";
 
 function Tabs(){
 
@@ -7,9 +7,9 @@ function Tabs(){
 
     const toggleTab = (index) =>{
         setToggleState(index);
+        console.log(index);
     }
 
-    
 
     return(
         <div className = "container">
@@ -26,13 +26,13 @@ function Tabs(){
             >Graph</div>
         </div>
             <div className="content-tabs">
-                <div className = {toggleState === 1 ? "content active-content" : "content"}>
-                    <h2>Add Data 1</h2>
+                <div className = {toggleState === 1 ? "active-content" : "content"}>
+                    <p>Test</p>
                 </div>
-                <div className = {toggleState === 2 ?"content active-content" : "content"}>
+                <div className = {toggleState === 2 ?"active-content" : "content"}>
                     <h2>Add Data 2</h2>
                 </div>
-                <div className = {toggleState === 3 ?"content active-content" : "content"}>
+                <div className = {toggleState === 3 ?"active-content" : "content"}>
                     <h2>Add Data 3</h2>
                 </div>
             </div>
