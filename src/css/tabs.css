@@ -4,10 +4,11 @@
     color: darkblue;
     font-weight: bold;
     padding-bottom: -10px;
-    
+    cursor: pointer;
 }
 .tabs{
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .inner-tabs{
@@ -16,6 +17,7 @@
     font-weight: bold;
     margin-right: 20px;
     padding: 5px;
+    cursor:pointer;
 }
 .inner-active{
     border: 1px solid darkblue;
