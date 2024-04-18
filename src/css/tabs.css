@@ -1,37 +1,59 @@
 /*Tabs */
 .active-tabs{
-    background: white;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid darkblue;
+    color: darkblue;
+    font-weight: bold;
+    padding-bottom: -10px;
+    
+}
+.tabs{
+    margin-right: 20px;
+}
+
+.inner-tabs{
+    border: 1px solid grey; 
+    size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 5px;
+}
+.inner-active{
+    border: 1px solid darkblue;
 }
 .active-content{
     display:flex;
     width:100%;
     max-height: 100%;
+    background-color: #EEEEEE;
+    justify-content: space-between;
 }
 .content{
     background: white;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     height: 100%;
     display: none;
 }
 .content-tabs{
     display: flex;
-    max-height: 500px;
+    max-height: 100%;
+    
+    
 }
 .bloc-tabs{
     justify-content: space-evenly;
     display: flex;
+    margin-right: 10px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 .container{
-    max-width: 500px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    margin-left: 30px;
 }
+
+
 /*Innner Tab CSS*/
-.title-tabs{
-    justify-content:  space-evenly
-}
-.container-title{
-    display:flex;
-    padding: 20px;
-    background-color: cyan;
-}
