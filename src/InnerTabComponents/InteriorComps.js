@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../css/tabs.css";
-import {LuAlignCenter, LuPencil} from "react-icons/lu";
+import { LuAlignCenter, LuPencil } from "react-icons/lu";
 
 
 export function TitleTabs() {
@@ -9,7 +9,7 @@ export function TitleTabs() {
         setToggleTitleButtons(index);
     }
     return (
-        <div className="w-full"  >
+        <div className="w-full h-full"  >
             <div className="border border-b-t border-[#D5DEE4] pb-2 p-1 flex justify-between w-full">
                 <div className="flex flex-row">
                     <div className={toggleTitleButtons === 1 ? "inner-tabs active-tabs inner-active" : "inner-tabs"}
@@ -22,15 +22,17 @@ export function TitleTabs() {
                         onClick={() => titleButtons(3)}
                     >Partners</div>
                 </div>
-                <div className = "flex flex-row p-1 pt-1">
-                    <p className= "text-xs text-[#BEBEC6] pr-2">Edit Inputs as per recommendations to increase utilization</p>
-                    <LuPencil
-                    style= {{
-                        color: "green",
-                        fontSize: "16px"
-                    }}/>
+                <div className="flex flex-row p-1 pt-1">
+                    <p className="text-xs text-[#BEBEC6] pr-2">Edit Inputs as per recommendations to increase utilization</p>
+                    <div >
+                        <LuPencil
+                            style={{
+                                color: "green",
+                                fontSize: "16px"
+                            }} />
+                    </div>
                 </div>
-                
+
             </div>
             <div className="flex w-full">
                 <div className={toggleTitleButtons === 1 ? "active-inner" : "content"}>
