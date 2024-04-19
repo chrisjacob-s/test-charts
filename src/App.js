@@ -4,15 +4,12 @@
 // import MUIPieChart from './MUIPieChart';
 // import MUICircularProgress from './MUICircularProgress';
 // import NewPredictionLayout from './NewPredictionLayout';
-import { Page } from './Page';
-import RechartsBarGraph from './RechartsBarGraph';
+import NewPredictionLayout from './NewPredictionLayout';
 
 function App() {
   return (
     <>
-      {/*<NewPredictionLayout />*/}
-      <Page />
-      {/* <RechartsBarGraph /> */}
+      <NewPredictionLayout />
     </>
   );
 }
