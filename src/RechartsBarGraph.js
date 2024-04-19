@@ -6,6 +6,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
+  ResponsiveContainer,
 } from "recharts";
 
 const data = [
@@ -28,24 +29,24 @@ const data = [
 
 const RechartsBarGraph = () => {
   return (
-    <div className="py-5">
-      <BarChart width={700} height={200} data={data} layout="vertical">
-        <CartesianGrid horizontal={false} />
-        <XAxis
-          type="number"
-          tickCount={8}
-          tickLine={false}
-          label={{
-            value: "Number of Partners",
-            position: "insideBottom",
-            offset: -5,
-          }}
-        />
-        <YAxis dataKey="name" type="category" tickLine={false} />
-        <Bar layout="vertical" dataKey="value" />
-        <Tooltip cursor={{ fill: "rgba(206, 206, 206, 0.2)" }} />
-      </BarChart>
-    </div>
+      <ResponsiveContainer width="100%" height={250}>
+        <BarChart width={600} height={200} data={data} layout="vertical">
+          <CartesianGrid horizontal={false} />
+          <XAxis
+            type="number"
+            tickCount={8}
+            tickLine={false}
+            label={{
+              value: "Number of Partners",
+              position: "insideBottom",
+              offset: -5,
+            }}
+          />
+          <YAxis dataKey="name" type="category" tickLine={false} />
+          <Bar layout="vertical" dataKey="value" />
+          <Tooltip cursor={{ fill: "rgba(206, 206, 206, 0.2)" }} />
+        </BarChart>
+      </ResponsiveContainer>
   );
 };
 
