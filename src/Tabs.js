@@ -8,7 +8,6 @@ function Tabs() {
 
   const toggleTab = (index) => {
     setToggleState(index);
-    console.log(index);
   };
 
   return (
@@ -34,15 +33,21 @@ function Tabs() {
         </div>
       </div>
       <div className="flex h-full">
-        <div className={toggleState === 1 ? "active-content" : "content"}>
-          <TitleTabs />
-        </div>
-        <div className={toggleState === 2 ? "active-content" : "content"}>
-          <ROICOMPS />
-        </div>
-        <div className={toggleState === 3 ? "active-content" : "content"}>
-          <RechartsBarGraph />
-        </div>
+        {toggleState === 1 && (
+          <div className="active-content">
+            <TitleTabs />
+          </div>
+        )}
+        {toggleState === 2 && (
+          <div className="active-content">
+            <ROICOMPS />
+          </div>
+        )}
+        {toggleState === 3 && (
+          <div className="active-content">
+            <RechartsBarGraph />
+          </div>
+        )}
       </div>
     </div>
   );
