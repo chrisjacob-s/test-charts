@@ -1,32 +1,44 @@
 /*Tabs */
 .active-tabs{
-    border-bottom: 2px solid darkblue;
-    color: darkblue;
+    border-bottom: 2px solid #2A4F96;
+    color: #2A4F96;
     font-weight: bold;
     padding-bottom: -10px;
     cursor: pointer;
 }
 .tabs{
-    margin-right: 20px;
+    margin-right: 10px;
     cursor: pointer;
 }
-
 .inner-tabs{
     border: 1px solid grey; 
     size: 20px;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 10px;
     padding: 5px;
     cursor:pointer;
+    border-radius: 4px;
 }
 .inner-active{
-    border: 1px solid darkblue;
+    border: 1px solid color #2A4F96;
+    background-color: rgba(173, 216, 230, 0.828);
+    border: 0;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0, 0.1), 0 1px 2px 0 rgba(0,0,0,0.6);
 }
 .active-content{
     display:flex;
     width:100%;
-    max-height: 100%;
-    background-color: #EEEEEE;
+    background-color: #F7F7F8;
+    justify-content: space-between;
+    border: 1px solid;
+    border-color: #7C7C7E;
+    min-height: 100%;
+    border-radius: 5px;
+}
+.active-inner{
+    display: flex;
+    width: 100%;
+    background-color: #F7F7F8;
     justify-content: space-between;
 }
 .content{
@@ -38,22 +50,24 @@
 }
 .content-tabs{
     display: flex;
-    max-height: 100%;
-    
+    border: 1px solid;
+    border-color: #7C7C7E;
+    height: 100%;
     
 }
 .bloc-tabs{
-    justify-content: space-evenly;
+    justify-content: start;
     display: flex;
-    margin-right: 10px;
-    border-bottom: 1px solid grey;
-    margin-bottom: 1rem;
+    border-bottom: 1px solid #D5DEE4;
+    padding: 5px;
+    background-color: white;
     width: 100%;
+    padding-bottom: .5rem;
 }
 .container{
     background-color: white;
     display: block;
-    width: 100%;
+    width: 60%;
     margin-left: 30px;
 }
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TitleTabs } from "./InnerTabComponents/RecComps";
+import { ROICOMPS, TitleTabs } from "./InnerTabComponents/InteriorComps";
 import "./css/tabs.css";
 
 function Tabs() {
@@ -13,9 +13,9 @@ function Tabs() {
 
 
     return (
-        <div className="container">
+        <div className="container h-5/6">
 
-            <div className="bloc-tabs">
+            <div className="bloc-tabs mb-2">
                 <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                     onClick={() => toggleTab(1)}
                 >Recommendation</div>
@@ -26,12 +26,12 @@ function Tabs() {
                     onClick={() => toggleTab(3)}
                 >Graph</div>
             </div>
-            <div className="content-tabs">
+            <div className="flex h-full">
                 <div className={toggleState === 1 ? "active-content" : "content"}>
                     <TitleTabs />
                 </div>
                 <div className={toggleState === 2 ? "active-content" : "content"}>
-                    <h2>Add Data 2</h2>
+                    <ROICOMPS />
                 </div>
                 <div className={toggleState === 3 ? "active-content" : "content"}>
                     <h2>Add Data 3</h2>
