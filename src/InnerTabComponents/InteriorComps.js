@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../css/tabs.css";
 
 
+
 export function TitleTabs() {
     const [toggleTitleButtons, setToggleTitleButtons] = useState(1);
     const titleButtons = (index) => {
@@ -34,14 +35,48 @@ export function TitleTabs() {
             </div>
         </div>
         <div className={toggleTitleButtons=== 2 ? "active-inner" : "content"}>
-            <h2>Add Data 2</h2>
-        </div>
+            <div className = "mt-3 ml-1 mb-3 flex-col w-full pl-3 pr-3 pt-0.5 pb-0.5">
+                <div className = "flex w-max mr-2 pt-4">
+                    <p className = "text-[#7C7C7E]">INCLUSIONS</p>
+                </div>
+                <div className = "flex w-max mr-2 pt-4">
+                    < p className = "text-[#7C7C7E]">EXCLUSIONS</p>
+                </div>
+            </div>
+        </div>  
         <div className={toggleTitleButtons === 3 ? "active-inner" : "content"}>
-            <h2>Add Data 3</h2>
+        <div className = "mt-3 ml-1 mb-3 flex-col w-full pl-3 pr-3 pt-0.5 pb-0.5">
+                <div className = "flex w-max mr-2 pt-4">
+                    <p className = "text-[#7C7C7E]">INCLUSIONS</p>
+                </div>
+                <div className = "flex w-max mr-2 pt-4">
+                    < p className = "text-[#7C7C7E]">EXCLUSIONS</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
     )
+}
+
+export function ROICOMPS(){
+    return(
+        <div className = "flex w-full h-full">
+            <div className = "pl-2 w-1/3 h-full flex flex-col justify-start gap-10 mt-5 font-bold">
+                <p className> Sales Projection</p>
+                <p>Commision Rates</p>
+                <p>Projected Revenue Growth</p>
+            </div>
+            <div className = "pl-2 w-1/2 h-full flex flex-col justify-start gap-10 mt-5">
+                <p>Dynamic Information</p>
+                <p>Dynamic Informatino</p>
+                <p>Dynamic Information</p>
+            </div>
+            
+            
+        </div>
+
+    );
 }
 
 

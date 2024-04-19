@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TitleTabs } from "./InnerTabComponents/RecComps";
+import { ROICOMPS, TitleTabs } from "./InnerTabComponents/InteriorComps";
 import "./css/tabs.css";
 
 function Tabs() {
@@ -31,7 +31,7 @@ function Tabs() {
                     <TitleTabs />
                 </div>
                 <div className={toggleState === 2 ? "active-content" : "content"}>
-                    <h2>Add Data 2</h2>
+                    <ROICOMPS />
                 </div>
                 <div className={toggleState === 3 ? "active-content" : "content"}>
                     <h2>Add Data 3</h2>
