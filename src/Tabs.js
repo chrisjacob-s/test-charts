@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ROICOMPS, TitleTabs } from "./InnerTabComponents/InteriorComps";
+import RechartsBarGraph from "./RechartsBarGraph";
 import "./css/tabs.css";
 
 function Tabs() {
@@ -34,7 +35,7 @@ function Tabs() {
                     <ROICOMPS />
                 </div>
                 <div className={toggleState === 3 ? "active-content" : "content"}>
-                    <h2>Add Data 3</h2>
+                    <RechartsBarGraph />
                 </div>
             </div>
         </div>
