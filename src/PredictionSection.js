@@ -3,7 +3,7 @@ import MUICircularProgress from "./MUICircularProgress";
 
 const PredictionSection = () => {
   return (
-    <div className="bg-[#fcf9d9] py-9 px-5 rounded-lg relative w-1/3">
+    <div className="bg-[#fcf9d9] py-9 px-5 rounded-lg relative w-[32rem] h-[32rem]">
       <h1 className="text-lg text-[#384e09] text-center font-bold uppercase -mt-5 mb-3">
         Prediction
       </h1>

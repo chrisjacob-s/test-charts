@@ -9,15 +9,21 @@ import { CssVarsProvider } from "@mui/joy/styles";
 // - look in 'Styles' tab
 // - locate .css-l3osn0-JoyCircularProgress-root
 // - find 'box-shadow'
-// - adjust values as desired  
+// - adjust values as desired
 
 const MUICircularProgress = ({ color, percentage }) => {
-  const { value: progressValue } = useCountUp({
+  let { value: progressValue } = useCountUp({
     isCounting: true,
     duration: 2,
     start: 0,
     end: percentage,
   });
+
+  if (progressValue > 100) {
+    progressValue = 'NA';
+  } else if (progressValue < 0) {
+    progressValue = 0;
+  }
 
   return (
     <Stack spacing={2}>

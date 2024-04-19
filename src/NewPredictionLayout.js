@@ -12,7 +12,7 @@ const NewPredictionLayout = () => {
   };
 
   return (
-    <div className="flex relative justify-center items-stretch py-10 px-10 w-full max-w-screen-2xl mx-auto">
+    <div className="flex relative justify-center py-10 px-10 w-full">
       <div>
         {!showRecommendation && (
           <div
@@ -26,10 +26,10 @@ const NewPredictionLayout = () => {
             >
               <path d="M10 2L3 9h4v6h6V9h4L10 2z" />
             </svg>
-            <span>Back to Prediction Vs Recommendation</span>
+            <span className="text-lg text-black">Back to Prediction Vs Recommendation</span>
           </div>
         )}
-        <div className="flex relative justify-center items-stretch py-10 px-10 w-full max-w-screen-2xl mx-auto">
+        <div className="flex relative justify-center items-stretch py-10 px-10 w-full">
           <PredictionSection />
           {showRecommendation && (
             <div className="flex justify-center items-center absolute bg-[#d5dee5] top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-28 h-28">

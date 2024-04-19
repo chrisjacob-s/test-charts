@@ -3,7 +3,7 @@ import MUICircularProgress from "./MUICircularProgress";
 
 const RecommendationSection = ({ toggleComponent }) => {
   return (
-    <div className="flex flex-col justify-center items-center bg-[#edf6fb] p-9 px-24 rounded-lg ml-8 w-5/12">
+    <div className="flex flex-col justify-center items-center bg-[#edf6fb] p-9 px-24 rounded-lg ml-8 w-[36rem]">
       <h1 className="text-lg text-[#384e09] text-center font-bold uppercase -mt-5">
         Recommendation
       </h1>
