@@ -15,7 +15,7 @@ export const Page = () => {
       {isToggleData === true ? (
         <NewPredictionLayout />
       ) : (
-        <div className="flex relative justify-evenly">
+        <div className="flex relative justify-center items-stretch py-10 px-10 w-full max-w-screen-2xl mx-auto">
           <PredictionSection />
           <Tabs />
         </div>

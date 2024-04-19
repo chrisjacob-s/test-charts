@@ -14,7 +14,7 @@ function Tabs() {
 
 
     return (
-        <div className="container h-5/6">
+        <div className="container h-2/3 ">
 
             <div className="bloc-tabs mb-2">
                 <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
