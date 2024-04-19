@@ -10,16 +10,15 @@ const NewPredictionLayout = () => {
       {/* Prediction Container */}
       <PredictionSection />
       {/* Icon Circle */}
-      <div className="flex justify-center items-center absolute bg-[#dbeafe] top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 w-32 h-32">
-        <div className="flex justify-center items-center bg-[#ffffff] rounded-full p-10 w-24 h-24">
+      <div className="flex justify-center items-center absolute bg-[#d5dee5] top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-28 h-28">
+        <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-24 h-24">
           <div>
-            <GraphIcon width="100px" height="100px"/>
+            <GraphIcon width="100px" height="100px" />
           </div>
         </div>
       </div>
       {/* Recommendation Container */}
-      <RecommendationSection/>
-     
+      <RecommendationSection />
     </div>
   );
 };
