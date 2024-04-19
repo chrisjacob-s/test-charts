@@ -9,7 +9,7 @@ export function TitleTabs() {
         setToggleTitleButtons(index);
     }
     return (
-        <div className="min-w-full"  >
+        <div className="w-full"  >
             <div className="bloc-tabs">
                 <div className={toggleTitleButtons === 1 ? "inner-tabs active-tabs inner-active" : "inner-tabs"}
                     onClick={() => titleButtons(1)}
@@ -21,14 +21,14 @@ export function TitleTabs() {
                     onClick={() => titleButtons(3)}
                 >Partners</div>
             </div>
-        <div className = "flex">
+        <div className = "flex w-full">
         <div className={toggleTitleButtons === 1 ? "active-inner" : "content"}>
             <div className = "mt-3 ml-1 mb-3 justify-between flex w-full pl-3 pr-3 pt-0.5 pb-0.5">
                 <div className = "gap-10 flex w-2/5 mr-2">
                     <p className = "text-[#7C7C7E]">BOOKING RANGE</p>
                     <p className = "text-[#7C7C7E]">PROVIDED</p>
                 </div>
-                <div className = " gap-3 flex w-3/5  justify-end">
+                <div className = " gap-3 flex w-1/2  justify-end">
                     <p className = "bg-[#27AE60] bg-right pl-2 pr-2 text-white font-semibold">RECOMMENDED</p>
                     <p className= "bg-[#27AE60] bg-right pl-2 pr-2 text-white font-semibold">POSSIBLE UTILIZATION</p>
                 </div>
