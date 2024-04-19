@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../css/tabs.css";
-
+import {LuAlignCenter, LuPencil} from "react-icons/lu";
 
 
 export function TitleTabs() {
@@ -23,7 +23,12 @@ export function TitleTabs() {
                     >Partners</div>
                 </div>
                 <div className = "flex flex-row p-1 pt-1">
-                    <div>Placeholder</div>
+                    <p className= "text-xs text-[#BEBEC6] pr-2">Edit Inputs as per recommendations to increase utilization</p>
+                    <LuPencil
+                    style= {{
+                        color: "green",
+                        fontSize: "16px"
+                    }}/>
                 </div>
                 
             </div>
