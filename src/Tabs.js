@@ -13,9 +13,9 @@ function Tabs() {
 
 
     return (
-        <div className="container">
+        <div className="container h-5/6">
 
-            <div className="bloc-tabs">
+            <div className="bloc-tabs mb-2">
                 <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                     onClick={() => toggleTab(1)}
                 >Recommendation</div>
@@ -26,7 +26,7 @@ function Tabs() {
                     onClick={() => toggleTab(3)}
                 >Graph</div>
             </div>
-            <div className="content-tabs">
+            <div className="flex h-full">
                 <div className={toggleState === 1 ? "active-content" : "content"}>
                     <TitleTabs />
                 </div>
