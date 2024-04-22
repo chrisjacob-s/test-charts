@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../css/tabs.css";
 import { LuAlignCenter, LuPencil } from "react-icons/lu";
+import {ReactComponent as Edit} from "../edit.svg"
 
 
 export function TitleTabs() {
@@ -25,11 +26,7 @@ export function TitleTabs() {
                 <div className="flex flex-row p-1 pt-1">
                     <p className="text-xs text-[#BEBEC6] pr-2">Edit Inputs as per recommendations to increase utilization</p>
                     <div >
-                        <LuPencil
-                            style={{
-                                color: "green",
-                                fontSize: "16px"
-                            }} />
+                        <Edit/>
                     </div>
                 </div>
 
