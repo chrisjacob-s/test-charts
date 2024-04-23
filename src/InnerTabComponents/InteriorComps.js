@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../css/tabs.css";
 import { LuAlignCenter, LuPencil } from "react-icons/lu";
 import {ReactComponent as Edit} from "../edit.svg"
+import PayoutTable from "./PayoutTable";
 
 
 export function TitleTabs() {
@@ -33,7 +34,7 @@ export function TitleTabs() {
             </div>
             <div className="flex w-full">
                 <div className={toggleTitleButtons === 1 ? "active-inner" : "content"}>
-                    <div className="mt-3 ml-1 mb-3 justify-between flex w-full pl-3 pr-3 pt-0.5 pb-0.5">
+                    {/*<div className="mt-3 ml-1 mb-3 justify-between flex w-full pl-3 pr-3 pt-0.5 pb-0.5">
                         <div className="gap-10 flex w-2/5 mr-2">
                             <p className="text-[#7C7C7E]">BOOKING RANGE</p>
                             <p className="text-[#7C7C7E]">PROVIDED</p>
@@ -43,6 +44,9 @@ export function TitleTabs() {
                             <p className="bg-[#27AE60] bg-right pl-2 pr-2 text-white font-semibold">POSSIBLE UTILIZATION</p>
                         </div>
                     </div>
+    */} 
+                <PayoutTable/>
+
                 </div>
                 <div className={toggleTitleButtons === 2 ? "active-inner" : "content"}>
                     <div className="mt-3 ml-1 mb-3 flex-col w-full pl-3 pr-3 pt-0.5 pb-0.5">
