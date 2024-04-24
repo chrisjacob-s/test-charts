@@ -22,7 +22,8 @@ function getData(props){
 export default function PayoutTable(){
     getData(null);
     return(
-        <TableContainer component={Paper}>
+        <Paper sx= {{width: "100%", overflow: "hidden"}}>
+        <TableContainer style = {{ maxHeight: "401px", maxwidth: "600px", display: "block"}}>
             <TableHead>
                 <TableRow>
                     <TableCell>BOOKING RANGE</TableCell>
@@ -36,14 +37,16 @@ export default function PayoutTable(){
                     <TableRow
                         key={row.name}
                         sx = {{'&:last-child td, &:last-child th': { border: 0 }}}
+                        style = {{display: "flex"}}
                     >
-                        <TableCell>{row.name}</TableCell>
+                        <TableCell component = "th" scope = "row">{row.name}</TableCell>
                         <TableCell>{row.weight}</TableCell>
-                        <TableCell>{row.height}</TableCell>
-                        <TableCell>{row.speed}</TableCell>
+                        <TableCell align = "right`">{row.height}</TableCell>
+                        <TableCell align = "right">{row.speed}</TableCell>
                     </TableRow>
                 ))}
             </TableBody>
         </TableContainer>
+        </Paper>
     )
 }
